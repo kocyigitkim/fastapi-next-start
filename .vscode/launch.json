@@ -5,18 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug",
-            "request": "launch",
-            "runtimeArgs": [
-                "run-script",
-                "debug"
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/src/App.ts",
+            "preLaunchTask": "npm: build",
+            "outFiles": [
+                "${workspaceFolder}/build/**/*.js",
+                "!**/node_modules/**"
             ],
-            "runtimeExecutable": "npm",
+            "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "type": "pwa-node"
         }
-        
+       
     ]
 }
