@@ -6,6 +6,3 @@ Boilerplate for FastApi
 - Express.JS
 - Multer
 - Knex (type declarations)
-
-### Futures
-- Virtual route plan implementation for bundled fastapi projects.
